@@ -1,58 +1,143 @@
- <!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-     <title>HTML Application</title>
-	 <link href="css/site.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML Application</title>
+   <link rel="stylesheet" href="css/site.css">
+   <style>
+       /* Add any additional styles here if needed */
+       body {
+           background-color: #96EFFF;
+           font-family: "Segoe UI", Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+
+       .main-container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 150vh;
+           background-color: #87C4FF;
+           color: #190482;
+           font-family: "Segoe UI";
+           overflow: hidden;
+       }
+
+       .cloud-image {
+           max-width: 100%;
+           height: auto;
+           margin-bottom: 20px;
+       }
+
+       .success-text {
+           font-size: 3em;
+           line-height: 1.2;
+           text-align: center;
+           color: #363062;
+       }
+
+       .description {
+           font-size: 1.5em;
+           line-height: 1.6;
+           text-align: center;
+           margin-bottom: 20px;
+           color: #363062;
+       }
+
+       .next-steps-container {
+           text-align: center;
+           padding-top: 20px;
+       }
+
+       .next-steps-header {
+           font-size: 1.2em;
+           line-height: 1.4;
+           padding-bottom: 15px;
+       }
+
+       .next-steps-body {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .step {
+           display: flex;
+           align-items: center;
+           margin: 10px 0;
+           font-size: 1.2em;
+           line-height: 1.4;
+       }
+
+       .step-icon {
+           height: 30px;
+           width: 30px;
+           margin-right: 10px;
+       }
+
+       .step-text a {
+           color: #7752FE;
+           text-decoration: none;
+       }
+
+       .step-text a:hover {
+           color: #ffffff;
+           text-decoration: underline;
+       }
+   </style>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="cloud-image">
-            <img src="img/successCloudNew.svg" />
-        </div>
-        <div class="content">
-            <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20HTML%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
-                <img src="img/tweetThis.svg" />
-            </a>            
-        </div>
-            <div class="content-body">
-                <div class="success-text">Success!</div>
-                <div class="description line-1"> Azure DevOps Project has been successfully setup</div>
-                <div class="description line-2"> Your HTML app is up and running on Azure</div>
-                <div class="next-steps-container">
-                    <div class="next-steps-header">Next up</div>
-                    <div class="next-steps-body">
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/cloneWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862409">Clone your code repository and start developing your application on IDE of your choice</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/deployWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862410">View your CI/CD pipeline on Visual Studio Team Services and customize it as per your needs</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/stackWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="http://portal.azure.com">View your service stack in the Azure Portal</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/lightbulbWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862126">Learn more about all you can do with Azure projects by visiting the documentation</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <div class="main-container">
+       <div class="cloud-image">
+           <img src="img/successCloudNew.svg" alt="Success Cloud">
+       </div>
+       <div class="content">
+           <div class="tweet-container">
+               <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20HTML%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
+                   <img src="img/tweetThis.svg" alt="Tweet This">
+               </a>
+           </div>
+           <div class="content-body">
+               <div class="success-text">!!Success!!</div>
+               <div class="description line-1">Azure DevOps Project has been successfully set up</div>
+               <div class="description line-2">Your HTML app is up and running on Azure</div>
+               <div class="next-steps-container">
+                   <div class="next-steps-header">Next up</div>
+                   <div class="next-steps-body">
+                       <div class="step">
+                           <div class="step-icon">
+                               <img src="img/cloneWhite.svg" alt="Clone Icon">
+                           </div>
+                           <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862409">Clone your code repository and start developing your application on the IDE of your choice</a></div>
+                       </div>
+                       <div class="step">
+                           <div class="step-icon">
+                               <img src="img/deployWhite.svg" alt="Deploy Icon">
+                           </div>
+                           <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862410">View your CI/CD pipeline on Visual Studio Team Services and customize it as per your needs</a></div>
+                       </div>
+                       <div class="step">
+                           <div class="step-icon">
+                               <img src="img/stackWhite.svg" alt="Stack Icon">
+                           </div>
+                           <div class="step-text"><a href="http://portal.azure.com">View your service stack in the Azure Portal</a></div>
+                       </div>
+                       <div class="step">
+                           <div class="step-icon">
+                               <img src="img/lightbulbWhite.svg" alt="Lightbulb Icon">
+                           </div>
+                           <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862126">Learn more about all you can do with Azure projects by visiting the documentation</a></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 </body>
 
 </html>
